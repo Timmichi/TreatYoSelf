@@ -1,0 +1,18 @@
+.contact-header {
+    text-align: center;
+    margin-top: 2%;
+}
+
+.contact-container {
+    position: relative;
+}
+.center {
+    position: absolute;
+    top: 100px;
+    left: 20%;
+    right: 20%;  
+}
+
+.paperAirplane {
+    margin-bottom: 4px;
+}

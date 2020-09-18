@@ -1,0 +1,265 @@
+/* <-------------------------animations-----------------------------------> */
+
+.card.zero:hover #circle {
+    animation: 1s ease spin;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+.card.zero:hover #shadow {
+    animation: 1.1s cubic-bezier(0.6,0,0.3,1) try; /*first and third must be in between 1. */
+    transform-origin: center;
+    transform-box: fill-box;
+}
+@keyframes try {
+    from {
+        transform: scaleX(0)
+    }
+    to {
+        transform: scaleX(1)
+    }
+}
+@keyframes hide {
+    to {
+        /* visibility: visible; */
+        opacity: 1;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: scaleX(1) 
+    }
+    to {
+        transform: scaleX(-1)
+    }
+}
+.howSection .pathBG {
+    display: none;
+}
+.howSection .simpleStepsBG {
+    display: block;
+    width: 25%;
+    margin: 0 auto;
+    padding-top: 20%;
+}
+.howSection .wrapper {
+    width: 100%;
+    padding-bottom: 20%;
+}
+.howSection .promo h4 {
+    padding: 0px 30px;
+    font-family: 'Archivo';
+    padding-top: 30px;
+    text-align: center;
+    font-weight: bold ;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;    
+    position: relative;
+    padding-bottom: 6%;
+}
+.howSection .pinkButton {
+    font-weight: bolder;
+    color: black;
+    padding: 5px 14px;
+    font-size: 14px;
+    font-family: "Arial";
+    border: 1px solid black;
+    background-color: #ff8f8f;
+    cursor: pointer;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    border-radius: 20px;
+    margin-top: 5%;
+}
+.howSection .yellowButton {
+    font-weight: bolder;
+    color: black;
+    padding: 5px 14px;
+    font-size: 14px;
+    font-family: "Arial";
+    border: 1px solid black;
+    background-color: rgb(243, 219, 142);
+    cursor: pointer;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    border-radius: 20px;
+    margin-top: 5%;
+}
+.howSection .yellowButton:hover, .pinkButton:hover {
+    color: black;
+    background-color: white;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    border:1px solid transparent;
+}
+
+
+/* <-----------------------------card section---------------------------> */
+
+.card.zero{
+    width: 50vw;
+    height: 40vw;
+    background: transparent;
+    border: 0;
+    position: relative;
+    text-align: center;
+}
+.card.zero .card-body{
+    padding: 0px 0px;
+}
+.card.zero .card-title{
+    font-family: 'Archivo';
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 5%;
+    margin-bottom: 0;
+    color: white;
+    text-shadow: 4px 6px 10px #727070;
+}
+.card.zero .card-title .bigNumber{
+        font-family: 'Archivo';
+        font-size: 18px;
+        font-weight: bolder;
+    }
+@media only screen and (max-width: 360px) {
+    .card.zero{
+        width: 70vw;
+        height: 65vw;
+        background: transparent;
+        border: 0;
+        position: relative;
+        text-align: center;
+    }
+    .card.zero .card-title .bigNumber{
+        font-family: 'Archivo';
+        font-size: 20px;
+        font-weight: bolder;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .howSection .wrapper {
+        padding-bottom: 10%;
+    }
+    .howSection .promo h4 {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .howSection .simpleStepsBG {
+        display: block;
+        width: 20%;
+        margin: 0 auto;
+        padding-top: 20%;
+    }
+    .card.zero .card-title{
+        font-family: 'Archivo';
+        font-size: 18px;
+    }
+    .card.zero .card-title .bigNumber{
+        font-family: 'Archivo';
+        font-size: 24px;
+        font-weight: bolder;
+    }
+    .card.zero{
+        width: 50vw;
+        height: 40vw;
+        background: transparent;
+        border: 0;
+        position: relative;
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .card.zero{
+        width: 40vw;
+        height: 40vw;
+        background: transparent;
+        border: 0;
+        position: relative;
+        text-align: center;
+    }
+    .card.zero .card-title {
+        font-size: 20px;
+    }
+    .howSection .promo h4 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+    .howSection .pinkButton {
+        font-size: 20px;
+    }
+    .howSection .yellowButton {
+        font-size: 20px;
+    }
+}
+@media only screen and (min-width: 1200px)
+{
+    .card.zero{
+        width: 20vw;
+        height: 18vw;
+        background: transparent;
+        border: 0;
+        position: relative;
+        text-align: center;
+    }
+    .card.zero .card-title{
+        font-family: 'Archivo';
+        font-size: 16px;
+        font-weight: 500;
+        padding: 0 5%;
+        margin-bottom: 0;
+        color: white;
+        text-shadow: 4px 6px 10px #727070;
+        display: block;
+    }
+    .card.zero .card-title .bigNumber{
+            font-family: 'Archivo';
+            font-size: 20px;
+            font-weight: bolder;
+        }  
+    .howSection .pathBG {
+        display: block;
+        position: absolute;
+        width: 110%;
+        right: -5%;
+        top: 25%;
+    }
+    .howSection .container {
+        width: 47%;
+        margin-left: 5%;
+        margin-top: 3%;
+    }
+    .howSection .simpleStepsBG {
+        display: none;
+    }
+    .howSection .wrapper {
+        width: 100%;
+        padding-bottom: 10%;
+        position: relative;
+    }
+    .howSection .promo h4 {
+        padding-top: 10%;   
+        margin-left: 30%;
+        text-align: left;
+        display: block;
+        font-size: 35px;
+        padding-bottom: 4%;
+        font-family: "Archivo"
+    } 
+    .howSection .pinkButton {
+        font-size: 14px;
+    }
+    .howSection .yellowButton {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+

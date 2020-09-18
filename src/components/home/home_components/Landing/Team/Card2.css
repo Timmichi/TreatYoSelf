@@ -1,0 +1,147 @@
+.card.two{
+    /* cursor: pointer; */
+    width: 42vw;
+    height: 210px;
+    position: relative;
+    z-index: 1;
+    background: transparent;
+    border: transparent;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.card.two .card-img-top {
+    width: 100%;
+} 
+.card.two .imgBox {
+    opacity: 1;
+    display: block;
+    position: relative;
+
+}
+.card.two .imgBox::after{
+    content: '';
+    opacity: 0;
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 10px;
+    transition: opacity .6s ease-in-out 0s;
+}
+.card.two .imgBox:hover::after {
+    opacity: 1;
+}
+.card.two .imgBox ul {
+    /* display: none; */
+    list-style-type: none;
+    margin: 0;
+    transition: opacity .2s ease-in-out 0s;
+    opacity: 0;
+}
+.card.two .imgBox:hover ul {
+    opacity: 1;
+}
+.card.two .linkedin {
+    width: 12%;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    left:5%;
+    bottom: 0;
+    z-index: 2;
+}
+.card.two .facebook {
+    width: 12%;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    left:20%;
+    bottom: 0;
+    z-index: 2;
+}
+.card.two .card-body {
+    padding-top: 2%;
+}
+.card.two .card-title {
+    color: black;
+    font-family: "Archivo";
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5%;
+    line-height: 16px;  ;
+} 
+.card.two .card-subtitle {
+    color: black;
+    font-family: "Archivo";
+    font-size: 12px;
+    font-weight: bold;
+} 
+
+@media only screen and (max-width: 320px) {
+    .card.two {
+        height: 170px;
+    }
+}
+@media only screen and (min-width: 450px) {
+    .card.two {
+        height: 240px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .card.two {
+        height: 30vw;
+    }
+    .card.two .card-title {
+        color: black;
+        font-family: "Archivo";
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 5%;
+        line-height: 16px;  ;
+    } 
+    .card.two .card-subtitle {
+        color: black;
+        font-family: "Archivo";
+        font-size: 13px;
+        font-weight: bold;
+    } 
+}
+@media only screen and (min-width:1024px) {
+    .card.two {
+        height: 30vw;
+    }
+    .card.two .card-title {
+        color: black;
+        font-family: "Archivo";
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 5%;
+        line-height: 16px;  ;
+    } 
+    .card.two .card-subtitle {
+        color: black;
+        font-family: "Archivo";
+        font-size: 15px;
+        font-weight: bold;
+    } 
+}
+@media only screen and (min-width:1024px) {
+    .card.two .card-title {
+        color: black;
+        font-family: "Archivo";
+        font-size: 19px;
+        font-weight: bold;
+        margin-bottom: 5%;
+        line-height: 16px;  ;
+    } 
+    .card.two .card-subtitle {
+        color: black;
+        font-family: "Archivo";
+        font-size: 14px;
+        font-weight: bold;
+    } 
+}
+@media only screen and (min-width:1200px) {
+}

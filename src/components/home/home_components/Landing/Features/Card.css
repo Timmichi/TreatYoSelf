@@ -1,0 +1,174 @@
+
+.card.one {
+    width: 42vw;
+    height: 42vw;
+    background-color: transparent;
+    border: transparent;
+}
+.card.one-threeCol {
+    width: 28vw;
+    height: 28vw;
+    background-color: transparent;
+    border: transparent;
+}
+.card.one .content, .card.one-threeCol .content{
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+}
+.card.one:hover .content, .card.one-threeCol:hover .content {
+    transform: rotateY(180deg);
+    transition: 1s;
+}
+.card.one .back .card-body {
+    padding: 1rem;
+}
+.card.one .front, .card.one .back, .card.one-threeCol .front, .card.one-threeCol .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+.card.one .back, .card.one-threeCol .back{
+    background: #3f3d3d;
+    transform: rotateY(180deg);
+}
+.card.one:hover .content, .card.one-threeCol:hover .content {
+    transform: rotateY(180deg);
+    transition: 1s;
+}
+
+.card.one .back .card-text,.card.one-threeCol .back .card-text{
+    font-family: Questrial; 
+    font-size: 13px;
+    padding: 0;
+    color: #ffffff !important;
+    display: block;
+}
+.card.one .front, .card.one-threeCol .front{
+    box-shadow: 5px 10px 20px 1px rgba(0,0,0,0.253)!important;
+    z-index: 1;
+    background: #3f3d3d;
+    width: 100%;
+    margin: 0;
+}
+.card.one .front .card-img-top, .card.one-threeCol .front .card-img-top{
+    margin-top: 5%;
+    width: 50%;
+} 
+.card.one .front .card-title, .card.one-threeCol .front .card-title{
+    font-family: Questrial; 
+    font-size: 16px;
+    padding: 0;
+    padding-top: 10%;
+    color: #90989e;
+    text-align: center;
+}
+.card.one .front .card-text, .card.one-threeCol .front .card-text{
+    display: none;
+}
+@media only screen and (max-width: 320px) {
+    .card.one .back .card-body {
+        padding: .2rem;
+        padding-top: 10px;
+    }
+    .card.one .back .card-text{
+        font-family: Questrial; 
+        font-size: 12px;
+        padding: 0;
+        color: #ffffff !important;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .card.one .front .card-title, .card.one-threeCol .front .card-title{
+        font-size: 20px;
+    }
+    .card.one .back .card-text,.card.one-threeCol .back .card-text{
+        font-family: Questrial; 
+        font-size: 16px;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .card.one .front .card-title, .card.one-threeCol .front .card-title{
+        font-size: 24px;
+    }
+    .card.one .back .card-text,.card.one-threeCol .back .card-text{
+        font-family: Questrial; 
+        padding: 5%;
+        font-size: 20px;
+    }
+    .card.one .front .card-img-top, .card.one-threeCol .front .card-img-top{
+        margin-top: 10%;
+        width: 40%;
+    } 
+}
+/* <---------------------------------non-flipped cards------------------------------------------------ */
+
+.card.one-threeCol .no-flip .front .card-img-top {
+    width: 25%;
+    margin-bottom: 10%;
+}
+.card.one-threeCol .no-flip .front .card-title {
+    font-family: Questrial; 
+    font-size: 16px;
+    padding: 0;
+    padding-top: 10%;
+    color: #90989e;
+    text-align: center;
+}
+.card.one-threeCol .no-flip .front .card-text {
+    display: block;
+    font-size: 14px;
+    padding: 0;
+    padding-top:0;
+    color: #90989e !important;
+}
+.card.one-threeCol .no-flip .back {
+    display: none;
+}
+
+.card.one-threeCol .no-flip .front::after{
+    content: "";
+    position: absolute;
+    width: 101%;
+    height: 101%;
+    top: -.25px;
+    left: -1px;
+    background: white;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 450ms ease-in;
+    border-radius: 4px;
+}
+
+.card.one-threeCol .no-flip .front:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+@media only screen and (min-width: 1200px) {
+    .card.one-threeCol {
+        width: 21vw;
+        height: 19vw;
+        background-color: transparent;
+        border: transparent;
+    }
+    .card.one-threeCol .no-flip .front .card-title {
+        display: block;
+        padding: 0;
+    }
+    .card.card.one-threeCol .no-flip .front .card-img-top {
+        margin-bottom: 5%;
+    }
+    
+}
+@media only screen and (min-width: 1366px) {
+    .card.one-threeCol {
+        width: 21vw;
+        height: 19vw;
+        background-color: transparent;
+        border: transparent;
+    }
+}

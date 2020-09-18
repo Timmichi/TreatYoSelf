@@ -1,0 +1,72 @@
+
+.spendingChart {
+    text-align: center;
+}
+.spendingChart h2 {
+    font-family: Source Sans Pro;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 0;
+
+}
+
+.spendingChart p {
+    font-family: Quicksand;
+    font-weight: bolder;
+    font-size: 12px;
+    color: grey;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.spendingChart h4 {
+    margin-top: 5px;
+    font-family: Source Sans Pro !important;
+    font-weight: bolder;
+    font-size: 14px;
+    text-align: left;
+    margin-left: 20px;
+}
+.spendingChart .progress {
+    background-color: rgb(236, 234, 234);
+    border-radius: 20px;
+    height: 30px;
+    width: 270px;
+    margin: 0 auto;
+}
+
+.spendingChart .progress-done {
+    /* background: linear-gradient(to left, green, red); */
+    background: #12A874;
+    box-shadow: 0 3px 3px -5px grey, 0 2px 5px grey;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    height: 100%;
+    width: 0;
+    opacity: 0;
+    transition: 1s ease 0.3s;
+}
+
+.spendingChart .progress-bad {
+    /* background: linear-gradient(to left, green, red); */
+    background: #ff0000;
+    box-shadow: 0 3px 3px -5px grey, 0 2px 5px grey;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    height: 100%;
+    width: 0;
+    opacity: 0;
+    transition: 1s ease 0.3s;
+}
+
+@media only screen and (min-width: 1740px) {
+    .spendingChart h4 {
+        margin-left: 45px;
+    }
+  }

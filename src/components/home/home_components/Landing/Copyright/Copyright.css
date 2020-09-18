@@ -1,0 +1,50 @@
+
+.copyrightSection .wrapper {
+    width: 100%;
+    padding-bottom: 10%;
+    text-align: center;
+}
+
+.copyrightSection .piggyIMG {
+    width: 40px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 5%;
+
+}
+
+.copyrightSection .contactButton {
+    font-weight: bolder;
+    color: white;
+    padding: 4px 13px;
+    font-size: 14px;
+    font-family: "Arial";
+    border: 1px solid white;
+    background-color: black;
+    cursor: pointer;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.copyrightSection .contactButton:hover {
+    color: black;
+    background-color: #FFBE5B;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    border:1px solid transparent;
+}
+.copyrightSection .promo h4 {
+    font-family: "Archivo";
+    font-size: 14px;
+    color: black;
+    margin-top: 15px;
+    
+}
+
+@media only screen and (min-width:1200px) {
+    .copyrightSection .wrapper {
+        width: 100%;
+        padding-bottom: 5%;
+        text-align: center;
+    }
+}
