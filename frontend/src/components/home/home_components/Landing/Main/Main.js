@@ -7,11 +7,7 @@ import laptopIMG from "./images/laptop.png";
 import piggyIMG from "../images/piggy.svg";
 import piggyPhoneIMG from "../images/piggy2.svg";
 import RegisterModal from "../../../../register/RegisterModal"
-<<<<<<< HEAD
 
-
-=======
->>>>>>> c726a5e9a432f17e9dd204812c0324f0d9dc48d4
 class Main extends Component {
     constructor(props) {
         super(props)
@@ -71,7 +67,7 @@ class Main extends Component {
                             Our beautiful UI will allow you to keep track of your transactions and finally acheive your financial goals.</p>
                     </article>
 
-                    
+
                 </div>
             </div >
         )
