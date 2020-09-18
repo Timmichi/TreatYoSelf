@@ -1,9 +1,6 @@
 import React, { Component } from "react";
-import Cookies from "js-cookie";
-import axios from "axios";
 import emailjs from "emailjs-com";
 import { Button, Form } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import { withAlert } from 'react-alert';
 import "./Contact.css"
 import send from "./images/send.svg";
