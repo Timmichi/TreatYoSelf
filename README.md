@@ -8,7 +8,7 @@ Web application to keep track of income/expense transactions. First, create an a
 ### How To Run
 Run npm start. 
 
-### Live Link to TreatYoSelf
+### Live Link 
 http://treatyoselfapp.herokuapp.com/
 
 ### Implementation
