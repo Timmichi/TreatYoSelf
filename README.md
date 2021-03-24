@@ -18,4 +18,4 @@ http://treatyoselfapp.herokuapp.com/
 - Improved data security and scalability of the application by utilizing web tokenization
 - Increased code readability and organization by leveraging React routers, classes, and hooks
   
-![TreatYoSelfDemo](https://www.youtube.com/watch?v=9kfS3dBtQO4&t=30s)
+[![TreatYoSelfDemo](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
