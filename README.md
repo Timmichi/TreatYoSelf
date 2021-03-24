@@ -1,4 +1,4 @@
-# Treat Yo Self is a simple and intuitive web application that helps make budgeting fun and easy!
+# TreatYoSelf Budgeting App
 
 Created by Darren, Timothy, Andrew
 
